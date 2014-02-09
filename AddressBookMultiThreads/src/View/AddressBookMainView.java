@@ -102,9 +102,9 @@ public class AddressBookMainView extends JFrame{
 		modelGrp=new DefaultListModel();
 		jlistGrp=new JList(modelGrp);
 		
-		remplirJlist();
-		remplirJlist2();
-		remplirArrayList();
+		fillJlist();
+		fillJlist2();
+		FillArrayList();
 		
 		Font police = new Font("Helvetica", Font.ITALIC, 14);
 
@@ -125,7 +125,6 @@ public class AddressBookMainView extends JFrame{
         JPsearch.add(picture);
 		JPsearch.add(jtextSearch);
 		JPsearch.add(searchButton);
-        //validate();
 		JPsearch.add(AddButton);
         JPsearch.add(adbButton2);
 		
@@ -193,39 +192,41 @@ public class AddressBookMainView extends JFrame{
 	
 	//Method of button add action
 			
-		public void ouvrirFenetreListener(ActionListener listenForBoutonAjouter){
-			AddButton.addActionListener(listenForBoutonAjouter);
+		public void openWindowListener(ActionListener listenForAddButton){
+			AddButton.addActionListener(listenForAddButton);
 
 			
 		}
 			
-		public void supprimerContactListener(ActionListener listenForSuppButton){
-				deleteButton.addActionListener(listenForSuppButton);
+		public void deleteContactListener(ActionListener listenForDeleteButton){
+				deleteButton.addActionListener(listenForDeleteButton);
 
 		}
 		
-		public void afficherInfoContactListener(MouseListener ok){
-			jlist.addMouseListener(ok);
+		public void DisplayInformationContactListener(MouseListener a){
+			jlist.addMouseListener(a);
 			
 		}
 		
-		public void afficherGroupeContactListener(MouseListener ok){
-			jlistGrp.addMouseListener(ok);
+		public void displayGroupContactListener(MouseListener a){
+			jlistGrp.addMouseListener(a);
 
 		}
 
-		public void shearchContactListener(ActionListener b){
-			searchButton.addActionListener(b);
+		public void searchContactListener(ActionListener a){
+			searchButton.addActionListener(a);
 
 		}
-		public void modifierContactListener(ActionListener c){
-			updateButton.addActionListener(c);
+		public void updateContactListener(ActionListener a){
+			updateButton.addActionListener(a);
 
 		}
 		
 
-		//FONCTION ANEX	 
-		public static void remplirArrayList(){
+
+		public static void FillArrayList(){
+
+
 			contacts.clear();
 			family.clear();
 			friends.clear();
@@ -246,8 +247,9 @@ public class AddressBookMainView extends JFrame{
 			}
 
 		}
-		
-		public static void remplirJlist(){
+
+
+		public static void fillJlist(){
 			contacts.clear();
 			jlist.removeAll();
 			model.clear();
@@ -264,7 +266,7 @@ public class AddressBookMainView extends JFrame{
 			}
 		}
 		
-		public static void remplirJlistFamille(){
+		public static void fillJlistFamily(){
 			jlist.removeAll();
 			model.clear();			
 			Collections.sort(family);
@@ -273,7 +275,7 @@ public class AddressBookMainView extends JFrame{
 			}
 
 		}
-		public static void remplirJlistAmis(){
+		public static void fillJlistFriends(){
 			jlist.removeAll();
 			model.clear();			
 			Collections.sort(friends);
@@ -282,7 +284,7 @@ public class AddressBookMainView extends JFrame{
 			}
 
 		}
-		public static void remplirJlistTravail(){
+		public static void fillJlistWork(){
 			jlist.removeAll();
 			model.clear();			
 			Collections.sort(work);
@@ -292,14 +294,14 @@ public class AddressBookMainView extends JFrame{
 
 		}
 		
-		public static void remplirJlist2(){
-			String[] choixGrp={"All","Family","Friends","Work"};
-			for (int i=0 ; i<choixGrp.length ; i++){
-				modelGrp.addElement(choixGrp[i]);
+		public static void fillJlist2(){
+			String[] chooseGroup ={"All","Family","Friends","Work"};
+			for (int i=0 ; i< chooseGroup.length ; i++){
+				modelGrp.addElement(chooseGroup[i]);
 			}
 		}
 		
-		public void afficherInfoContact(){
+		public void displayInfoContact(){
 			JLabel nom=null;
 			JPContainInfo.removeAll();
 			ContactModel cont_test = new ContactModel("", "", "", "", "", "", "","");
@@ -315,7 +317,6 @@ public class AddressBookMainView extends JFrame{
 						+ "<br><br><br><strong> M@il : </strong>" + cont_test.getMail()
 						+ "<br><br><br><strong> Group : </strong>" + cont_test.getGroupe() + "</br></html>");
 				JPContainInfo.add(nom);
-
 				JPContainInfo.validate();
 				JPContainInfo.setVisible(true);
 				}else {
@@ -326,16 +327,16 @@ public class AddressBookMainView extends JFrame{
 				}
 		}
 		
-		public void viderDernPanel(){
+		public void emptyLastPanel(){
 			JPContainInfo.removeAll();
 		}
 		
-		public void afficherInfoContactRecherche(String nomPrenom){
+		public void displaySearchedInfoContact(String lastNameFirstName){
 			JLabel nom=null;
 			JPContainInfo.removeAll();
 			ContactModel cont_test = new ContactModel("", "", "", "", "", "", "","");
 			ContactsFileModel m=new ContactsFileModel();
-			cont_test = m.searchContact(nomPrenom);
+			cont_test = m.searchContact(lastNameFirstName);
 			if (cont_test!=null){
 				nom = new JLabel("<html><br><strong> Last Name : </strong>" + cont_test.getLastName()
 						+ "<br><br><strong> First Name : </strong>" + cont_test.getFirstName()
