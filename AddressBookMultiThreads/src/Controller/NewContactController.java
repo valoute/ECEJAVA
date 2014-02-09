@@ -44,7 +44,8 @@ public class NewContactController {
 		
 
 				
-				System.out.println("Time before this thread "+System.currentTimeMillis());
+				System.out.println("***Beggining of the thread to Add Contact***");
+                long i=System.currentTimeMillis();
 				listContacts = new ArrayList<ContactModel>();
 				
 				try {
@@ -64,7 +65,10 @@ public class NewContactController {
 					else mainFrame.fillJlistWork();
 					mainFrame.fillJlist();
 					
-					 System.out.println("Time after this thread " + System.currentTimeMillis());
+					 System.out.println("****End of the thread****");
+                long j=System.currentTimeMillis();
+                long t=j-i;
+                System.out.println("Duration of the thread run: " +(long)t+"ms");
 				
 				newConFrame.dispose();
 				
