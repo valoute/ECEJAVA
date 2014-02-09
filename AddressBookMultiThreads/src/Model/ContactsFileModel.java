@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 
 public class ContactsFileModel {
-	
+	//Two attributes; pathOfFile in order to contain the string of the path of the file and an object of fileWriter
 	private String pathOfFile;
 	private FileWriter file;
 
@@ -39,7 +39,8 @@ public class ContactsFileModel {
 	public void addContact(ContactModel contactMod) throws IOException
 	{
 		file = new FileWriter(new File(pathOfFile), true);
-		
+
+        //We add the  contact infos into the file
 		for (int i=0 ; i<8 ; i++)
 		{
 			switch(i)
@@ -84,7 +85,8 @@ public class ContactsFileModel {
 		List<ContactModel> list = new ArrayList<ContactModel>();
 		List<String> line = new ArrayList<String>();
 		Scanner scanner = new Scanner(new File("contactsListFile.txt"));
-		
+
+        //Read by line
 		while(scanner.hasNextLine())
 		{
 			line.add(scanner.nextLine());
@@ -100,7 +102,7 @@ public class ContactsFileModel {
 				if(j==0)
 					contactmod.setLastName(line.get(i));
 				if(j==1)
-					contactmod.setFirstName(line.get(i+1));
+					contactmod.setFirstName(line.get(i + 1));
 				if(j==2)
 					contactmod.setAddress1(line.get(i + 2));
 				if(j==3)
@@ -110,9 +112,9 @@ public class ContactsFileModel {
 				if(j==5)
 					contactmod.setPhoneNb2(line.get(i + 5));
 				if(j==6)
-					contactmod.setMail(line.get(i+6));
+					contactmod.setMail(line.get(i + 6));
 				if(j==7)
-					contactmod.setGroupe(line.get(i+7));
+					contactmod.setGroupe(line.get(i + 7));
 			}
 			
 			list.add(contactmod);

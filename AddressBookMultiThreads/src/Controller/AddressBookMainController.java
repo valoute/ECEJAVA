@@ -85,7 +85,7 @@ public class AddressBookMainController {
 		}
 	}
 	
-	//Action when a group is selected
+	//Action when a group is selected, display the list of contacts of that grp
 	class GroupOfContact implements MouseListener{
 
 		@Override

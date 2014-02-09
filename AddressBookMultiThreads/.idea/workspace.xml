@@ -67,13 +67,9 @@
       <file leaf-file-name="AddressBookMainView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/AddressBookMainView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="34" selection-start="4943" selection-end="4943" vertical-scroll-proportion="-5.845333" vertical-offset="4810" max-vertical-offset="5525">
+            <state line="108" column="55" selection-start="3454" selection-end="3454" vertical-scroll-proportion="0.312" vertical-offset="1481" max-vertical-offset="5797">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#4538#4539#0" expanded="true" />
-                <element signature="e#4559#4560#0" expanded="true" />
-                <element signature="e#4614#4615#0" expanded="true" />
-                <element signature="e#4643#4644#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,7 +79,10 @@
         <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/javax/swing/DefaultListModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="54" column="13" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="8942">
-              <folding />
+              <folding>
+                <element signature="e#0#17379#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +130,7 @@
       <file leaf-file-name="NewContactController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/NewContactController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="5" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="1209" max-vertical-offset="1683">
+            <state line="59" column="46" selection-start="1452" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="1107" max-vertical-offset="1683">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,7 +141,7 @@
       <file leaf-file-name="UpdateContactController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/UpdateContactController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="29" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="845" max-vertical-offset="1513">
+            <state line="68" column="29" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="937" max-vertical-offset="1513">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -154,8 +153,10 @@
       <file leaf-file-name="ContactsFileModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/ContactsFileModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="5" selection-start="4202" selection-end="4202" vertical-scroll-proportion="-9.92" vertical-offset="2608" max-vertical-offset="3009">
-              <folding />
+            <state line="124" column="4" selection-start="2591" selection-end="2591" vertical-scroll-proportion="-77.52" vertical-offset="0" max-vertical-offset="3077">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,13 +189,13 @@
         <option value="$PROJECT_DIR$/src/View/modifieContactView.java" />
         <option value="$PROJECT_DIR$/src/Model/FichierManager.java" />
         <option value="$PROJECT_DIR$/src/MainMultiThreads.java" />
-        <option value="$PROJECT_DIR$/src/Controller/NewContactController.java" />
-        <option value="$PROJECT_DIR$/src/Controller/AddressBookMainController.java" />
         <option value="$PROJECT_DIR$/src/Controller/UpdateContactController.java" />
-        <option value="$PROJECT_DIR$/src/Model/ContactModel.java" />
-        <option value="$PROJECT_DIR$/src/Model/ContactsFileModel.java" />
         <option value="$PROJECT_DIR$/src/View/NewContactView.java" />
         <option value="$PROJECT_DIR$/src/View/UpdateContactView.java" />
+        <option value="$PROJECT_DIR$/src/Controller/AddressBookMainController.java" />
+        <option value="$PROJECT_DIR$/src/Controller/NewContactController.java" />
+        <option value="$PROJECT_DIR$/src/Model/ContactModel.java" />
+        <option value="$PROJECT_DIR$/src/Model/ContactsFileModel.java" />
         <option value="$PROJECT_DIR$/src/View/AddressBookMainView.java" />
       </list>
     </option>
@@ -604,12 +605,12 @@
       <created>1391883729100</created>
       <updated>1391883729100</updated>
       <workItem from="1391883730598" duration="14963000" />
-      <workItem from="1391955528229" duration="12325000" />
+      <workItem from="1391955528229" duration="18175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27288000" />
+    <option name="totallyTimeSpent" value="33138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -669,10 +670,6 @@
         <state line="317" column="96" selection-start="10157" selection-end="10157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5610">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#4538#4539#0" expanded="true" />
-            <element signature="e#4559#4560#0" expanded="true" />
-            <element signature="e#4614#4615#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,7 +712,9 @@
     <entry file="file://$PROJECT_DIR$/src/Model/ContactsFileModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="23" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="3196">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -755,55 +754,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AddressBookMainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="55" selection-start="4774" selection-end="4774" vertical-scroll-proportion="0.0" vertical-offset="3338" max-vertical-offset="3723">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/NewContactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="5" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="1209" max-vertical-offset="1683">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/UpdateContactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="29" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="845" max-vertical-offset="1513">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/ContactModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="0" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="1700">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/ContactsFileModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="5" selection-start="4202" selection-end="4202" vertical-scroll-proportion="-9.92" vertical-offset="2608" max-vertical-offset="3009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/javax/swing/DefaultListModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="13" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="8942">
-          <folding />
+          <folding>
+            <element signature="e#0#17379#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -824,15 +781,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/AddressBookMainView.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/AddressBookMainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="34" selection-start="4943" selection-end="4943" vertical-scroll-proportion="-5.845333" vertical-offset="4810" max-vertical-offset="5525">
+        <state line="192" column="41" selection-start="4350" selection-end="4350" vertical-scroll-proportion="0.0" vertical-offset="3134" max-vertical-offset="3723">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#4538#4539#0" expanded="true" />
-            <element signature="e#4559#4560#0" expanded="true" />
-            <element signature="e#4614#4615#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/NewContactController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="46" selection-start="1452" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="1107" max-vertical-offset="1683">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UpdateContactController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="29" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="937" max-vertical-offset="1513">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/ContactsFileModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="4" selection-start="2591" selection-end="2591" vertical-scroll-proportion="-77.52" vertical-offset="0" max-vertical-offset="3077">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/ContactModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="88" selection-start="2171" selection-end="2171" vertical-scroll-proportion="2.5110357" vertical-offset="0" max-vertical-offset="1751">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/AddressBookMainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="55" selection-start="3454" selection-end="3454" vertical-scroll-proportion="0.312" vertical-offset="1481" max-vertical-offset="5797">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

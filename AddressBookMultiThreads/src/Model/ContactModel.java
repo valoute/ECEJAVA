@@ -9,6 +9,7 @@ package Model;
 
 public class ContactModel implements Comparable{
 
+    //Attributes of our classic  Address Book
 	private String lastName;
 	private String firstName;
 	private String address1;
@@ -21,6 +22,7 @@ public class ContactModel implements Comparable{
 	
 	
 	public ContactModel(){
+        //Constructor
 	}
 	
 	public ContactModel(String lastN, String firstN, String add1, String add2, String phone1, String phone2, String m, String grp){
@@ -102,7 +104,7 @@ public class ContactModel implements Comparable{
 	}
 
 
-	
+	// In order to work with the contactsListFile.txt
 	public String toString(){
 		return this.getLastName() + ","+
 				 this.getFirstName() + ","+
@@ -115,12 +117,13 @@ public class ContactModel implements Comparable{
 		}
 
 
+    //Overriding of the compareTo function in order to compares FirstNames and LastNames
 	@Override
-	public int compareTo(Object o) {
-		ContactModel con =(ContactModel)o;
-		if(lastName.equals(con.lastName)){
-			return firstName.compareTo(con.lastName);
+    public int compareTo(Object o) {
+		ContactModel contModel =(ContactModel)o;
+		if(lastName.equals(contModel.lastName)){
+			return firstName.compareTo(contModel.lastName);
 		}
-		return lastName.compareTo(con.lastName);
+		return lastName.compareTo(contModel.lastName);
 	}	
 }

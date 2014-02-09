@@ -21,8 +21,8 @@ import View.AddressBookMainView;
 
 public class NewContactController {
 
-
-	private NewContactView newConFrame;
+//List of attributes
+	private NewContactView newConFrame; // For the New Contact Frame
 	private AddressBookMainView mainFrame;
 	private ContactsFileModel contactFile = new ContactsFileModel("contactsListFile.txt");
 	private AddContact aC =new AddContact();

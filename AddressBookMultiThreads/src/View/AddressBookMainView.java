@@ -27,15 +27,16 @@ public class AddressBookMainView extends JFrame{
 
     //As usual
 	private static final long serialVersionUID = 1L;
-	
+
+    //File class object
 	private static ContactsFileModel conFile = new ContactsFileModel("contactsListFile.txt");
 
 	//JPanel
-	private JPanel JPcontener = new JPanel(new GridLayout(1, 3));
+	private JPanel JPmain = new JPanel(new GridLayout(1, 3));
 	private JPanel JPsearch = new JPanel(); //1st Panel
 	private JPanel JPListContacts = new JPanel();// 2nd Panel
 	private JPanel JPInfoContact = new JPanel();// 3rd Panel
-	private JPanel JPtoutInfo=new JPanel(); // dans infoContact
+	private JPanel JPContainInfo =new JPanel();
 
 	//JButton
 	private JButton searchButton =new JButton();
@@ -43,12 +44,14 @@ public class AddressBookMainView extends JFrame{
 	private JButton AddButton = new JButton("Add  contact");
 	private JButton deleteButton =new JButton("Delete contact");
     private JButton adbButton =new JButton();
+    private JButton adbButton2 =new JButton();
+    private JButton picture =new JButton();
 
 
 	//JLabel
 	private JLabel JLinfo = new JLabel("               CONTACT INFO");
 	private JLabel JLlist = new JLabel("CONTACTS LIST");
-	private JLabel JLgroupe = new JLabel("GROUPS");
+	private JLabel JLgroup = new JLabel("GROUPS");
 
 	//Contact JList
 	private static List<ContactModel> contacts;
@@ -62,28 +65,34 @@ public class AddressBookMainView extends JFrame{
 	private static DefaultListModel modelGrp;
 	private static JList jlistGrp;
 
-	//Search
+	//JTextField
 	private JTextField jtextSearch = new JTextField("LastName   FirstName");
 	
 	public AddressBookMainView(){
 
+        //Color
         jtextSearch.setForeground(Color.red);
-        jtextSearch.setPreferredSize(new Dimension(150, 30));
-
-
-        JPcontener.setBackground(Color.CYAN);
+        JPmain.setBackground(Color.CYAN);
         JPsearch.setBackground(Color.CYAN);
         JPInfoContact.setBackground(Color.CYAN);
         JPListContacts.setBackground(Color.CYAN);
-        JPtoutInfo.setBackground(Color.CYAN);
+        JPContainInfo.setBackground(Color.CYAN);
+
+        //Icon
         searchButton.setIcon(new ImageIcon("./img/Capture.jpg"));
         adbButton.setIcon(new ImageIcon("./img/Capture1.jpg"));
+        adbButton2.setIcon(new ImageIcon("./img/Capture1.jpg"));
+        picture.setIcon(new ImageIcon("./img/Capture2.jpg"));
 
+        //Size
         deleteButton.setPreferredSize(new Dimension(150, 30));
         updateButton.setPreferredSize(new Dimension(150, 30));
         AddButton.setPreferredSize(new Dimension(150, 30));
         searchButton.setPreferredSize(new Dimension(150, 30));
         adbButton.setPreferredSize(new Dimension(60, 60));
+        adbButton2.setPreferredSize(new Dimension(60, 60));
+        picture.setPreferredSize(new Dimension(159, 100));
+        jtextSearch.setPreferredSize(new Dimension(150, 30));
 
 		model = new DefaultListModel();
 		contacts = new ArrayList<ContactModel>();
@@ -97,26 +106,28 @@ public class AddressBookMainView extends JFrame{
 		remplirJlist2();
 		remplirArrayList();
 		
-		Font police = new Font("Helvetica", Font.BOLD, 14);
+		Font police = new Font("Helvetica", Font.ITALIC, 14);
 
 		JLinfo.setFont(police);
 		JLlist.setFont(police);
-		JLgroupe.setFont(police);
+		JLgroup.setFont(police);
         JLinfo.setForeground(Color.ORANGE);
         JLlist.setForeground(Color.ORANGE);
-        JLgroupe.setForeground(Color.ORANGE);
+        JLgroup.setForeground(Color.ORANGE);
 
 		
-		JPsearch.add(JLgroupe);
+		JPsearch.add(JLgroup);
 		JPsearch.add(jlistGrp);
 		jlistGrp.setFixedCellWidth(150);
-		jlistGrp.setVisibleRowCount(20);
+		jlistGrp.setVisibleRowCount(10);
 		JScrollPane scrollPane2 = new JScrollPane(jlistGrp);
 		JPsearch.add(scrollPane2);
+        JPsearch.add(picture);
 		JPsearch.add(jtextSearch);
 		JPsearch.add(searchButton);
         //validate();
 		JPsearch.add(AddButton);
+        JPsearch.add(adbButton2);
 		
 		JPListContacts.add(JLlist);
 		JPListContacts.add(jlist);
@@ -126,20 +137,28 @@ public class AddressBookMainView extends JFrame{
 		JPListContacts.add(scrollPane);
 		JPListContacts.add(deleteButton);
         JPListContacts.add(adbButton);
-		
+
+
+
+
+        //BorderLayout for the second column
 		JPInfoContact.setLayout(new BorderLayout());
-		JPInfoContact.add(JLinfo,BorderLayout.NORTH);
-		JPInfoContact.add(JPtoutInfo,BorderLayout.CENTER);
-		JPInfoContact.add(updateButton,BorderLayout.SOUTH);
+        JPInfoContact.add(JLinfo,BorderLayout.NORTH);
+		JPInfoContact.add(JPContainInfo,BorderLayout.CENTER);
+        JPInfoContact.add(updateButton,BorderLayout.SOUTH);
+
+
+
 		
 		
-		
+		//Frame Init
 		this.setTitle("Address Book 2013-2014 ECE");
 		this.setSize(630, 535);
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setContentPane(JPcontener);
+		this.setContentPane(JPmain);
 
+        //ADD to main Pane
         this.getContentPane().add(JPListContacts);
         this.getContentPane().add(JPInfoContact);
 		this.getContentPane().add(JPsearch);
@@ -147,7 +166,7 @@ public class AddressBookMainView extends JFrame{
 		this.setVisible(true);
 	}
 	
-	// GETTER AND SETTER
+
 	public ContactsFileModel getBookFile() {
 		return conFile;
 	}
@@ -172,7 +191,7 @@ public class AddressBookMainView extends JFrame{
 		return jlistGrp;
 	}
 	
-	//Method of button add action 
+	//Method of button add action
 			
 		public void ouvrirFenetreListener(ActionListener listenForBoutonAjouter){
 			AddButton.addActionListener(listenForBoutonAjouter);
@@ -282,22 +301,23 @@ public class AddressBookMainView extends JFrame{
 		
 		public void afficherInfoContact(){
 			JLabel nom=null;
-			JPtoutInfo.removeAll();
+			JPContainInfo.removeAll();
 			ContactModel cont_test = new ContactModel("", "", "", "", "", "", "","");
 			ContactsFileModel m=new ContactsFileModel();
 			cont_test = m.searchContact(jlist.getSelectedValue().toString());
 			if (cont_test!=null){
-				nom = new JLabel("<html><br><strong> Last Name : </strong>" + cont_test.getLastName()
-						+ "<br><br><strong> First Name : </strong>" + cont_test.getFirstName()
-						+ "<br><br><strong> Address 1 : </strong>" + cont_test.getAddress1()
-						+ "<br><br><strong> Address 2 : </strong>" + cont_test.getAddress2()
-						+ "<br><br><strong> Phone Number 1 : </strong>" + cont_test.getPhoneNb1()
-						+ "<br><br><strong> Phone Number 2 : </strong>" + cont_test.getPhoneNb2()
-						+ "<br><br><strong> M@il : </strong>" + cont_test.getMail()
-						+ "<br><br><strong> Group : </strong>" + cont_test.getGroupe() + "</br></html>");
-				JPtoutInfo.add(nom);
-				JPtoutInfo.validate();
-				JPtoutInfo.setVisible(true);
+				nom = new JLabel("<html><br><br><strong> Last Name : </strong>" + cont_test.getLastName()
+						+ "<br><br><br><strong> First Name : </strong>" + cont_test.getFirstName()
+						+ "<br><br><br><strong> Address 1 : </strong>" + cont_test.getAddress1()
+						+ "<br><br><br><strong> Address 2 : </strong>" + cont_test.getAddress2()
+						+ "<br><br><br><strong> Phone Number 1 : </strong>" + cont_test.getPhoneNb1()
+						+ "<br><br><br><strong> Phone Number 2 : </strong>" + cont_test.getPhoneNb2()
+						+ "<br><br><br><strong> M@il : </strong>" + cont_test.getMail()
+						+ "<br><br><br><strong> Group : </strong>" + cont_test.getGroupe() + "</br></html>");
+				JPContainInfo.add(nom);
+
+				JPContainInfo.validate();
+				JPContainInfo.setVisible(true);
 				}else {
 					nom = new JLabel("");
 					javax.swing.JOptionPane.showMessageDialog(null, "This Contact does not exist");
@@ -307,12 +327,12 @@ public class AddressBookMainView extends JFrame{
 		}
 		
 		public void viderDernPanel(){
-			JPtoutInfo.removeAll();
+			JPContainInfo.removeAll();
 		}
 		
 		public void afficherInfoContactRecherche(String nomPrenom){
 			JLabel nom=null;
-			JPtoutInfo.removeAll();
+			JPContainInfo.removeAll();
 			ContactModel cont_test = new ContactModel("", "", "", "", "", "", "","");
 			ContactsFileModel m=new ContactsFileModel();
 			cont_test = m.searchContact(nomPrenom);
@@ -325,9 +345,9 @@ public class AddressBookMainView extends JFrame{
 						+ "<br><br><strong> Phone Number 2 : </strong>" + cont_test.getPhoneNb2()
 						+ "<br><br><strong> M@il : </strong>" + cont_test.getMail()
 						+ "<br><br><strong> Group : </strong>" + cont_test.getGroupe() + "</br></html>");;
-				JPtoutInfo.add(nom);
-				JPtoutInfo.validate();
-				JPtoutInfo.setVisible(true);
+				JPContainInfo.add(nom);
+				JPContainInfo.validate();
+				JPContainInfo.setVisible(true);
 				}else {
 					nom = new JLabel("");
 					javax.swing.JOptionPane.showMessageDialog(null, "This Contact does not exist.");
