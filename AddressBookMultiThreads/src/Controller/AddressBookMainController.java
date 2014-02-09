@@ -30,12 +30,12 @@ public class AddressBookMainController {
 
 		this.view = view;
 
-		this.view.ouvrirFenetreListener(new AddNewContact());
-		this.view.supprimerContactListener(new DeleteContact());
-		this.view.afficherInfoContactListener(new InformationContact());
-		this.view.shearchContactListener(new SearchContact());
-		this.view.modifierContactListener(new UpdateContact());
-		this.view.afficherGroupeContactListener(new GroupOfContact());
+		this.view.openWindowListener(new AddNewContact());
+		this.view.deleteContactListener(new DeleteContact());
+		this.view.DisplayInformationContactListener(new InformationContact());
+		this.view.searchContactListener(new SearchContact());
+		this.view.updateContactListener(new UpdateContact());
+		this.view.displayGroupContactListener(new GroupOfContact());
 	}
 
 	// AddContact button action
@@ -68,7 +68,7 @@ public class AddressBookMainController {
 			
 			String lastNameFirstNameSearch =null;
 			lastNameFirstNameSearch =view.getJtf1();
-			view.afficherInfoContactRecherche(lastNameFirstNameSearch);
+			view.displaySearchedInfoContact(lastNameFirstNameSearch);
 		}
 
 	}
@@ -93,11 +93,11 @@ public class AddressBookMainController {
 
 			String group =view.getJlistGrp().getSelectedValue().toString();
 			System.out.println(group);
-			if(group.equals("Friends")) view.remplirJlistAmis();
-			else if(group.equals("Family")) view.remplirJlistFamille();
-			else if(group.equals("Work")) view.remplirJlistTravail();
+			if(group.equals("Friends")) view.fillJlistFriends();
+			else if(group.equals("Family")) view.fillJlistFamily();
+			else if(group.equals("Work")) view.fillJlistWork();
 			
-			else view.remplirJlist(); 
+			else view.fillJlist();
 			
 		
 		}
@@ -135,7 +135,7 @@ public class AddressBookMainController {
 		public void mouseClicked(MouseEvent e) {
 			System.out.println("Contact information are displayed");
 
-			view.afficherInfoContact();
+			view.displayInfoContact();
 			
 		}
 
@@ -179,11 +179,11 @@ public class AddressBookMainController {
 				e1.printStackTrace();
 			}
 			
-			view.remplirArrayList();
-			if(groupe.equals("Amis")) view.remplirJlistAmis();
-			else if(groupe.equals("Famille")) view.remplirJlistFamille();
-			else view.remplirJlistTravail();
-			view.remplirJlist();
+			view.FillArrayList();
+			if(groupe.equals("Amis")) view.fillJlistFriends();
+			else if(groupe.equals("Famille")) view.fillJlistFamily();
+			else view.fillJlistWork();
+			view.fillJlist();
 			
 		}
 		

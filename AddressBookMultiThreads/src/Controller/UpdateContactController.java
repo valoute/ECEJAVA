@@ -25,7 +25,7 @@ public class UpdateContactController {
 	public UpdateContactController(UpdateContactView updateFrame){
 		this.updateFrame = updateFrame;
 		
-		this.updateFrame.modifierContactListener(new classModContact());
+		this.updateFrame.updateContactListener(new classModContact());
 	}
 
 
@@ -57,7 +57,7 @@ public class UpdateContactController {
 			// Deletion of the old information  in the file
 			try {
 				contactFile.deleteContact(contact);
-				mainFrame.remplirArrayList();
+				mainFrame.FillArrayList();
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -65,12 +65,12 @@ public class UpdateContactController {
 			// Add the updated contact in the file
 			try {
 				contactFile.addContact(newContact);
-				mainFrame.remplirArrayList();
+				mainFrame.FillArrayList();
 				String groupe = updateFrame.getCombo();
-				if(groupe.equals("Friends")) mainFrame.remplirJlistAmis();
-				else if(groupe.equals("Family")) mainFrame.remplirJlistFamille();
-				else mainFrame.remplirJlistTravail();
-				mainFrame.remplirJlist();
+				if(groupe.equals("Friends")) mainFrame.fillJlistFriends();
+				else if(groupe.equals("Family")) mainFrame.fillJlistFamily();
+				else mainFrame.fillJlistWork();
+				mainFrame.fillJlist();
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

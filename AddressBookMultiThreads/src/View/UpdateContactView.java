@@ -32,7 +32,7 @@ public class UpdateContactView extends JFrame {
 	private JTextField jtf6;
 	private JTextField jtf7;
 
-	private JButton b = new JButton("OK");
+	private JButton b = new JButton("Validate");
 
 
 
@@ -45,8 +45,8 @@ public class UpdateContactView extends JFrame {
     private JLabel mail = new JLabel("   M@il:");
     private JLabel group = new JLabel("   Group:");
 	
-	private String[] choixGrp={"All","Family","Friends","Work"};
-	private JComboBox combo=new JComboBox(choixGrp);
+	private String[] chooseGroup ={"All","Family","Friends","Work"};
+	private JComboBox combo=new JComboBox(chooseGroup);
 
 	public UpdateContactView(ContactModel cont) {
 		jtf1 = new JTextField(cont.getLastName());
@@ -118,8 +118,8 @@ public class UpdateContactView extends JFrame {
 	}
 
 		
-		public void modifierContactListener(ActionListener listenForOKButton){
-			b.addActionListener(listenForOKButton);
+		public void updateContactListener(ActionListener listenForValidateButton){
+			b.addActionListener(listenForValidateButton);
 		}
 		
 		class ItemAction implements ActionListener{

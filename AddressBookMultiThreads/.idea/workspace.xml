@@ -64,17 +64,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddressBookMainView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/AddressBookMainView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="340" column="60" selection-start="9814" selection-end="9814" vertical-scroll-proportion="0.0" vertical-offset="5439" max-vertical-offset="5814">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultListModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/javax/swing/DefaultListModel.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,14 +97,169 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMultiThreads.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainMultiThreads.java">
+      <file leaf-file-name="AddressBookMainController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/AddressBookMainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="36" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="192" column="41" selection-start="4312" selection-end="4312" vertical-scroll-proportion="0.22071308" vertical-offset="3134" max-vertical-offset="3723">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMultiThreads.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainMultiThreads.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/Controller" pinned="false" current="false" current-in-tab="false">
+        <entry file="uml://JAVA/Controller">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>Controller</OriginalElement>
+              <nodes>
+                <node x="1748.0" y="2000.0">Controller.AddressBookMainController</node>
+                <node x="2267.4559523809526" y="2010.0">Controller.UpdateContactController</node>
+                <node x="21.5" y="1130.0">View.NewContactView</node>
+                <node x="720.3000000000001" y="0.0">Model.ContactModel</node>
+                <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
+                <node x="1490.4166666666667" y="2209.0">MainMultiThreads</node>
+                <node x="726.5000000000001" y="940.0">View.AddressBookMainView</node>
+                <node x="1854.5000000000002" y="1140.0">View.UpdateContactView</node>
+                <node x="247.39285714285722" y="1990.0">Controller.NewContactController</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="MainMultiThreads" target="Controller.AddressBookMainController">
+                  <point x="36.0" y="-24.0" />
+                  <point x="1598.4166666666667" y="2184.0" />
+                  <point x="1891.0" y="2184.0" />
+                  <point x="0.0" y="74.5" />
+                </edge>
+                <edge source="MainMultiThreads" target="View.AddressBookMainView">
+                  <point x="-36.0" y="-24.0" />
+                  <point x="1526.4166666666667" y="2184.0" />
+                  <point x="1137.5" y="2184.0" />
+                  <point x="-137.0" y="495.0" />
+                </edge>
+                <edge source="Controller.UpdateContactController" target="Model.ContactsFileModel">
+                  <point x="37.125" y="-64.5" />
+                  <point x="2453.0809523809526" y="1960.0" />
+                  <point x="2529.0" y="1960.0" />
+                  <point x="2529.0" y="920.0" />
+                  <point x="1907.0" y="920.0" />
+                  <point x="92.5" y="105.0" />
+                </edge>
+                <edge source="Controller.AddressBookMainController" target="View.AddressBookMainView">
+                  <point x="-107.25" y="-74.5" />
+                  <point x="1783.75" y="1970.0" />
+                  <point x="1411.5" y="1970.0" />
+                  <point x="137.0" y="495.0" />
+                </edge>
+                <edge source="Controller.AddressBookMainController" target="View.UpdateContactView">
+                  <point x="107.25" y="-74.5" />
+                  <point x="1998.25" y="1970.0" />
+                  <point x="2020.5000000000002" y="1970.0" />
+                  <point x="-166.0" y="295.0" />
+                </edge>
+                <edge source="Controller.UpdateContactController" target="View.UpdateContactView">
+                  <point x="-37.125" y="-64.5" />
+                  <point x="2378.8309523809526" y="1970.0" />
+                  <point x="2352.5" y="1970.0" />
+                  <point x="166.0" y="295.0" />
+                </edge>
+                <edge source="Controller.NewContactController" target="Model.ContactModel">
+                  <point x="-131.19999999999993" y="-84.5" />
+                  <point x="280.1928571428573" y="1970.0" />
+                  <point x="0.0" y="1970.0" />
+                  <point x="0.0" y="620.0" />
+                  <point x="787.3000000000001" y="620.0" />
+                  <point x="-268.0" y="295.0" />
+                </edge>
+                <edge source="View.AddressBookMainView" target="Model.ContactsFileModel">
+                  <point x="219.20000000000005" y="-495.0" />
+                  <point x="1493.7000000000003" y="910.0" />
+                  <point x="1759.0" y="910.0" />
+                  <point x="-55.5" y="105.0" />
+                </edge>
+                <edge source="Controller.UpdateContactController" target="View.AddressBookMainView">
+                  <point x="-111.375" y="-64.5" />
+                  <point x="2304.5809523809526" y="1950.0" />
+                  <point x="1685.5" y="1950.0" />
+                  <point x="411.0" y="495.0" />
+                </edge>
+                <edge source="Controller.NewContactController" target="View.AddressBookMainView">
+                  <point x="131.2" y="-84.5" />
+                  <point x="542.5928571428572" y="1970.0" />
+                  <point x="863.5000000000001" y="1970.0" />
+                  <point x="-411.0" y="495.0" />
+                </edge>
+                <edge source="Model.ContactsFileModel" target="Model.ContactModel">
+                  <point x="0.0" y="-105.0" />
+                  <point x="1814.5" y="620.0" />
+                  <point x="1323.3000000000002" y="620.0" />
+                  <point x="268.0" y="295.0" />
+                </edge>
+                <edge source="Controller.NewContactController" target="Model.ContactsFileModel">
+                  <point x="65.60000000000002" y="-84.5" />
+                  <point x="476.99285714285725" y="1960.0" />
+                  <point x="716.0000000000001" y="1960.0" />
+                  <point x="716.0000000000001" y="900.0" />
+                  <point x="1722.0" y="900.0" />
+                  <point x="-92.5" y="105.0" />
+                </edge>
+                <edge source="Controller.AddressBookMainController" target="Model.ContactsFileModel">
+                  <point x="35.75" y="-74.5" />
+                  <point x="1926.75" y="1960.0" />
+                  <point x="1844.0" y="1960.0" />
+                  <point x="1844.0" y="920.0" />
+                  <point x="1870.0" y="920.0" />
+                  <point x="55.5" y="105.0" />
+                </edge>
+                <edge source="View.AddressBookMainView" target="Model.ContactModel">
+                  <point x="-219.20000000000005" y="-495.0" />
+                  <point x="1055.3000000000002" y="880.0" />
+                  <point x="1030.5059523809525" y="880.0" />
+                  <point x="1030.5059523809525" y="610.0" />
+                  <point x="1055.3000000000002" y="610.0" />
+                  <point x="0.0" y="295.0" />
+                </edge>
+                <edge source="Controller.NewContactController" target="View.NewContactView">
+                  <point x="0.0" y="-84.5" />
+                  <point x="411.3928571428572" y="1970.0" />
+                  <point x="363.5" y="1970.0" />
+                  <point x="0.0" y="305.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="-45.000000000000455" y="1433.9999999999995" />
+              <SelectedNodes>
+                <node>Controller.AddressBookMainController</node>
+                <node>Controller.UpdateContactController</node>
+                <node>View.NewContactView</node>
+                <node>Model.ContactModel</node>
+                <node>Model.ContactsFileModel</node>
+                <node>MainMultiThreads</node>
+                <node>View.AddressBookMainView</node>
+                <node>View.UpdateContactView</node>
+                <node>Controller.NewContactController</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -127,21 +271,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewContactController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/NewContactController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="43" selection-start="1448" selection-end="1461" vertical-scroll-proportion="0.0" vertical-offset="1107" max-vertical-offset="1683">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateContactController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UpdateContactController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/UpdateContactController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="48" selection-start="873" selection-end="873" vertical-scroll-proportion="0.859116" vertical-offset="284" max-vertical-offset="1513">
+            <state line="35" column="48" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="284" max-vertical-offset="1513">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -150,13 +283,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactsFileModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/ContactsFileModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="4" selection-start="2591" selection-end="2591" vertical-scroll-proportion="-77.52" vertical-offset="0" max-vertical-offset="3077">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+      <file leaf-file-name="MODULES/mdl-AddressBookMultiThreads" pinned="false" current="false" current-in-tab="false">
+        <entry file="uml://MODULES/mdl-AddressBookMultiThreads">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>MODULES</ID>
+              <OriginalElement>mdl-AddressBookMultiThreads</OriginalElement>
+              <nodes>
+                <node x="0.0" y="0.0">mdl-AddressBookMultiThreads</node>
+              </nodes>
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="-173.0" y="-27.0" />
+              <SelectedNodes>
+                <node>mdl-AddressBookMultiThreads</node>
+              </SelectedNodes>
+              <Categories />
             </state>
           </provider>
         </entry>
@@ -350,6 +492,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
   </component>
   <component name="RunManager" selected="Application.MainMultiThreads">
     <configuration default="false" name="MainMultiThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -599,22 +742,39 @@
       <AnalysisUIOptions />
     </option>
   </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c88e0bdd-faff-4bc4-b86c-634b99044585" name="Default" comment="" />
       <created>1391883729100</created>
       <updated>1391883729100</updated>
       <workItem from="1391883730598" duration="14963000" />
-      <workItem from="1391955528229" duration="19624000" />
+      <workItem from="1391955528229" duration="21320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34587000" />
+    <option name="totallyTimeSpent" value="36283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -637,7 +797,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.336478" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.336478" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -744,32 +904,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainMultiThreads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/javax/swing/DefaultListModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="13" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="8942">
           <folding>
             <element signature="e#0#17379#0" expanded="false" />
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AddressBookMainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="41" selection-start="4350" selection-end="4350" vertical-scroll-proportion="0.0" vertical-offset="3134" max-vertical-offset="3723">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -829,7 +969,186 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/UpdateContactController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="48" selection-start="873" selection-end="873" vertical-scroll-proportion="0.859116" vertical-offset="284" max-vertical-offset="1513">
+        <state line="35" column="48" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="284" max-vertical-offset="1513">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-AddressBookMultiThreads">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-AddressBookMultiThreads</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">mdl-AddressBookMultiThreads</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-173.0" y="-27.0" />
+          <SelectedNodes>
+            <node>mdl-AddressBookMultiThreads</node>
+          </SelectedNodes>
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMultiThreads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Controller">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Controller</OriginalElement>
+          <nodes>
+            <node x="1748.0" y="2000.0">Controller.AddressBookMainController</node>
+            <node x="2267.4559523809526" y="2010.0">Controller.UpdateContactController</node>
+            <node x="21.5" y="1130.0">View.NewContactView</node>
+            <node x="720.3000000000001" y="0.0">Model.ContactModel</node>
+            <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
+            <node x="1490.4166666666667" y="2209.0">MainMultiThreads</node>
+            <node x="726.5000000000001" y="940.0">View.AddressBookMainView</node>
+            <node x="1854.5000000000002" y="1140.0">View.UpdateContactView</node>
+            <node x="247.39285714285722" y="1990.0">Controller.NewContactController</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="MainMultiThreads" target="Controller.AddressBookMainController">
+              <point x="36.0" y="-24.0" />
+              <point x="1598.4166666666667" y="2184.0" />
+              <point x="1891.0" y="2184.0" />
+              <point x="0.0" y="74.5" />
+            </edge>
+            <edge source="MainMultiThreads" target="View.AddressBookMainView">
+              <point x="-36.0" y="-24.0" />
+              <point x="1526.4166666666667" y="2184.0" />
+              <point x="1137.5" y="2184.0" />
+              <point x="-137.0" y="495.0" />
+            </edge>
+            <edge source="Controller.UpdateContactController" target="Model.ContactsFileModel">
+              <point x="37.125" y="-64.5" />
+              <point x="2453.0809523809526" y="1960.0" />
+              <point x="2529.0" y="1960.0" />
+              <point x="2529.0" y="920.0" />
+              <point x="1907.0" y="920.0" />
+              <point x="92.5" y="105.0" />
+            </edge>
+            <edge source="Controller.AddressBookMainController" target="View.AddressBookMainView">
+              <point x="-107.25" y="-74.5" />
+              <point x="1783.75" y="1970.0" />
+              <point x="1411.5" y="1970.0" />
+              <point x="137.0" y="495.0" />
+            </edge>
+            <edge source="Controller.AddressBookMainController" target="View.UpdateContactView">
+              <point x="107.25" y="-74.5" />
+              <point x="1998.25" y="1970.0" />
+              <point x="2020.5000000000002" y="1970.0" />
+              <point x="-166.0" y="295.0" />
+            </edge>
+            <edge source="Controller.UpdateContactController" target="View.UpdateContactView">
+              <point x="-37.125" y="-64.5" />
+              <point x="2378.8309523809526" y="1970.0" />
+              <point x="2352.5" y="1970.0" />
+              <point x="166.0" y="295.0" />
+            </edge>
+            <edge source="Controller.NewContactController" target="Model.ContactModel">
+              <point x="-131.19999999999993" y="-84.5" />
+              <point x="280.1928571428573" y="1970.0" />
+              <point x="0.0" y="1970.0" />
+              <point x="0.0" y="620.0" />
+              <point x="787.3000000000001" y="620.0" />
+              <point x="-268.0" y="295.0" />
+            </edge>
+            <edge source="View.AddressBookMainView" target="Model.ContactsFileModel">
+              <point x="219.20000000000005" y="-495.0" />
+              <point x="1493.7000000000003" y="910.0" />
+              <point x="1759.0" y="910.0" />
+              <point x="-55.5" y="105.0" />
+            </edge>
+            <edge source="Controller.UpdateContactController" target="View.AddressBookMainView">
+              <point x="-111.375" y="-64.5" />
+              <point x="2304.5809523809526" y="1950.0" />
+              <point x="1685.5" y="1950.0" />
+              <point x="411.0" y="495.0" />
+            </edge>
+            <edge source="Controller.NewContactController" target="View.AddressBookMainView">
+              <point x="131.2" y="-84.5" />
+              <point x="542.5928571428572" y="1970.0" />
+              <point x="863.5000000000001" y="1970.0" />
+              <point x="-411.0" y="495.0" />
+            </edge>
+            <edge source="Model.ContactsFileModel" target="Model.ContactModel">
+              <point x="0.0" y="-105.0" />
+              <point x="1814.5" y="620.0" />
+              <point x="1323.3000000000002" y="620.0" />
+              <point x="268.0" y="295.0" />
+            </edge>
+            <edge source="Controller.NewContactController" target="Model.ContactsFileModel">
+              <point x="65.60000000000002" y="-84.5" />
+              <point x="476.99285714285725" y="1960.0" />
+              <point x="716.0000000000001" y="1960.0" />
+              <point x="716.0000000000001" y="900.0" />
+              <point x="1722.0" y="900.0" />
+              <point x="-92.5" y="105.0" />
+            </edge>
+            <edge source="Controller.AddressBookMainController" target="Model.ContactsFileModel">
+              <point x="35.75" y="-74.5" />
+              <point x="1926.75" y="1960.0" />
+              <point x="1844.0" y="1960.0" />
+              <point x="1844.0" y="920.0" />
+              <point x="1870.0" y="920.0" />
+              <point x="55.5" y="105.0" />
+            </edge>
+            <edge source="View.AddressBookMainView" target="Model.ContactModel">
+              <point x="-219.20000000000005" y="-495.0" />
+              <point x="1055.3000000000002" y="880.0" />
+              <point x="1030.5059523809525" y="880.0" />
+              <point x="1030.5059523809525" y="610.0" />
+              <point x="1055.3000000000002" y="610.0" />
+              <point x="0.0" y="295.0" />
+            </edge>
+            <edge source="Controller.NewContactController" target="View.NewContactView">
+              <point x="0.0" y="-84.5" />
+              <point x="411.3928571428572" y="1970.0" />
+              <point x="363.5" y="1970.0" />
+              <point x="0.0" y="305.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="-45.000000000000455" y="1433.9999999999995" />
+          <SelectedNodes>
+            <node>Controller.AddressBookMainController</node>
+            <node>Controller.UpdateContactController</node>
+            <node>View.NewContactView</node>
+            <node>Model.ContactModel</node>
+            <node>Model.ContactsFileModel</node>
+            <node>MainMultiThreads</node>
+            <node>View.AddressBookMainView</node>
+            <node>View.UpdateContactView</node>
+            <node>Controller.NewContactController</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AddressBookMainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="41" selection-start="4312" selection-end="4312" vertical-scroll-proportion="0.22071308" vertical-offset="3134" max-vertical-offset="3723">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />

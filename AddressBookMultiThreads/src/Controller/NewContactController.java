@@ -32,7 +32,7 @@ public class NewContactController {
 	public NewContactController(NewContactView newConFrame){
 
 		this.newConFrame = newConFrame;
-		this.newConFrame.ajouterContactListener(new AddContact());
+		this.newConFrame.addContactListener(new AddContact());
 
 	}
 	
@@ -57,12 +57,12 @@ public class NewContactController {
 					t.start();	
 						
 					
-					mainFrame.remplirArrayList();
+					mainFrame.FillArrayList();
 					String grp= newConFrame.getCombo();
-					if(grp.equals("Friends")) mainFrame.remplirJlistAmis();
-					else if(grp.equals("Family")) mainFrame.remplirJlistFamille();
-					else mainFrame.remplirJlistTravail();
-					mainFrame.remplirJlist();
+					if(grp.equals("Friends")) mainFrame.fillJlistFriends();
+					else if(grp.equals("Family")) mainFrame.fillJlistFamily();
+					else mainFrame.fillJlistWork();
+					mainFrame.fillJlist();
 					
 					 System.out.println("Time after this thread " + System.currentTimeMillis());
 				

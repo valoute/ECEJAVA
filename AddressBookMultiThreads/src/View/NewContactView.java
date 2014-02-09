@@ -118,8 +118,8 @@ public class NewContactView extends JFrame {
 	//Method for button ok
 
 		
-		public void ajouterContactListener(ActionListener listenForOKButton){
-			val.addActionListener(listenForOKButton);
+		public void addContactListener(ActionListener listenForValidateButton){
+			val.addActionListener(listenForValidateButton);
 
 		
 		}
