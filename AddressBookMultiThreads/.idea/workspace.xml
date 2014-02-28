@@ -67,10 +67,8 @@
       <file leaf-file-name="AddressBookMainView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/AddressBookMainView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="42" selection-start="5998" selection-end="6015" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="5814">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="216" column="42" selection-start="5998" selection-end="6015" vertical-scroll-proportion="0.0" vertical-offset="3672" max-vertical-offset="6222">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +76,7 @@
       <file leaf-file-name="MainMultiThreads.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainMultiThreads.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="459">
+            <state line="20" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -95,8 +93,8 @@
                 <node x="2267.4559523809526" y="2010.0">Controller.UpdateContactController</node>
                 <node x="21.5" y="1130.0">View.NewContactView</node>
                 <node x="720.3000000000001" y="0.0">Model.ContactModel</node>
-                <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
                 <node x="1490.4166666666667" y="2209.0">MainMultiThreads</node>
+                <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
                 <node x="726.5000000000001" y="940.0">View.AddressBookMainView</node>
                 <node x="1854.5000000000002" y="1140.0">View.UpdateContactView</node>
                 <node x="247.39285714285722" y="1990.0">Controller.NewContactController</node>
@@ -109,8 +107,8 @@
                 <node>Controller.UpdateContactController</node>
                 <node>View.NewContactView</node>
                 <node>Model.ContactModel</node>
-                <node>Model.ContactsFileModel</node>
                 <node>MainMultiThreads</node>
+                <node>Model.ContactsFileModel</node>
                 <node>View.AddressBookMainView</node>
                 <node>View.UpdateContactView</node>
                 <node>Controller.NewContactController</node>
@@ -145,7 +143,7 @@
       <file leaf-file-name="NewContactController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/NewContactController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="52" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+            <state line="52" column="52" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
@@ -154,7 +152,7 @@
       <file leaf-file-name="NewContactView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/NewContactView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="8" selection-start="2796" selection-end="2796" vertical-scroll-proportion="4.7293234" vertical-offset="0" max-vertical-offset="2380">
+            <state line="125" column="8" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.22116904" vertical-offset="1747" max-vertical-offset="2380">
               <folding />
             </state>
           </provider>
@@ -262,6 +260,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,7 +363,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -654,16 +652,17 @@
       <workItem from="1391883730598" duration="14963000" />
       <workItem from="1391955528229" duration="21439000" />
       <workItem from="1391980986531" duration="2452000" />
-      <workItem from="1391984073258" duration="1437000" />
+      <workItem from="1391984073258" duration="1726000" />
+      <workItem from="1392329179751" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40291000" />
+    <option name="totallyTimeSpent" value="40594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -678,18 +677,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34411764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34411764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35220125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -714,6 +713,111 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MainMultiThreads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Controller">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Controller</OriginalElement>
+          <nodes>
+            <node x="1748.0" y="2000.0">Controller.AddressBookMainController</node>
+            <node x="2267.4559523809526" y="2010.0">Controller.UpdateContactController</node>
+            <node x="21.5" y="1130.0">View.NewContactView</node>
+            <node x="720.3000000000001" y="0.0">Model.ContactModel</node>
+            <node x="1490.4166666666667" y="2209.0">MainMultiThreads</node>
+            <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
+            <node x="726.5000000000001" y="940.0">View.AddressBookMainView</node>
+            <node x="1854.5000000000002" y="1140.0">View.UpdateContactView</node>
+            <node x="247.39285714285722" y="1990.0">Controller.NewContactController</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="-45.0" y="1434.0" />
+          <SelectedNodes>
+            <node>Controller.AddressBookMainController</node>
+            <node>Controller.UpdateContactController</node>
+            <node>View.NewContactView</node>
+            <node>Model.ContactModel</node>
+            <node>MainMultiThreads</node>
+            <node>Model.ContactsFileModel</node>
+            <node>View.AddressBookMainView</node>
+            <node>View.UpdateContactView</node>
+            <node>Controller.NewContactController</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Capture.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UpdateContactController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="48" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/NewContactController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="52" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/NewContactView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="8" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.0" vertical-offset="2125" max-vertical-offset="2380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contactsListFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-AddressBookMultiThreads">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-AddressBookMultiThreads</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">mdl-AddressBookMultiThreads</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-173.0" y="-27.0" />
+          <SelectedNodes>
+            <node>mdl-AddressBookMultiThreads</node>
+          </SelectedNodes>
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/UpdateContactView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="28" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="2499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/ContactModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="119" column="88" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
@@ -745,8 +849,8 @@
             <node x="2267.4559523809526" y="2010.0">Controller.UpdateContactController</node>
             <node x="21.5" y="1130.0">View.NewContactView</node>
             <node x="720.3000000000001" y="0.0">Model.ContactModel</node>
-            <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
             <node x="1490.4166666666667" y="2209.0">MainMultiThreads</node>
+            <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
             <node x="726.5000000000001" y="940.0">View.AddressBookMainView</node>
             <node x="1854.5000000000002" y="1140.0">View.UpdateContactView</node>
             <node x="247.39285714285722" y="1990.0">Controller.NewContactController</node>
@@ -759,8 +863,8 @@
             <node>Controller.UpdateContactController</node>
             <node>View.NewContactView</node>
             <node>Model.ContactModel</node>
-            <node>Model.ContactsFileModel</node>
             <node>MainMultiThreads</node>
+            <node>Model.ContactsFileModel</node>
             <node>View.AddressBookMainView</node>
             <node>View.UpdateContactView</node>
             <node>Controller.NewContactController</node>
@@ -816,6 +920,7 @@
             <node>mdl-AddressBookMultiThreads</node>
           </SelectedNodes>
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -828,9 +933,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/javax/swing/DefaultListModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="13" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9384">
-          <folding />
-        </state>
+        <state line="54" column="13" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9384" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/NewContactView.java">
@@ -872,8 +975,8 @@
             <node x="2267.4559523809526" y="2010.0">Controller.UpdateContactController</node>
             <node x="21.5" y="1130.0">View.NewContactView</node>
             <node x="720.3000000000001" y="0.0">Model.ContactModel</node>
-            <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
             <node x="1490.4166666666667" y="2209.0">MainMultiThreads</node>
+            <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
             <node x="726.5000000000001" y="940.0">View.AddressBookMainView</node>
             <node x="1854.5000000000002" y="1140.0">View.UpdateContactView</node>
             <node x="247.39285714285722" y="1990.0">Controller.NewContactController</node>
@@ -886,8 +989,8 @@
             <node>Controller.UpdateContactController</node>
             <node>View.NewContactView</node>
             <node>Model.ContactModel</node>
-            <node>Model.ContactsFileModel</node>
             <node>MainMultiThreads</node>
+            <node>Model.ContactsFileModel</node>
             <node>View.AddressBookMainView</node>
             <node>View.UpdateContactView</node>
             <node>Controller.NewContactController</node>
@@ -943,9 +1046,7 @@
     <entry file="file://$PROJECT_DIR$/src/View/AddressBookMainView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="317" column="96" selection-start="10157" selection-end="10157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5610">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,16 +1107,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/javax/swing/DefaultListModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="13" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="8942">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/UpdateContactView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="28" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="2227">
-          <folding />
-        </state>
+        <state line="54" column="13" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="8942" />
       </provider>
     </entry>
     <entry file="uml://MODULES/mdl-AddressBookMultiThreads">
@@ -1046,8 +1138,8 @@
             <node x="2267.4559523809526" y="2010.0">Controller.UpdateContactController</node>
             <node x="21.5" y="1130.0">View.NewContactView</node>
             <node x="720.3000000000001" y="0.0">Model.ContactModel</node>
-            <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
             <node x="1490.4166666666667" y="2209.0">MainMultiThreads</node>
+            <node x="1666.5" y="640.0">Model.ContactsFileModel</node>
             <node x="726.5000000000001" y="940.0">View.AddressBookMainView</node>
             <node x="1854.5000000000002" y="1140.0">View.UpdateContactView</node>
             <node x="247.39285714285722" y="1990.0">Controller.NewContactController</node>
@@ -1060,8 +1152,8 @@
             <node>Controller.UpdateContactController</node>
             <node>View.NewContactView</node>
             <node>Model.ContactModel</node>
-            <node>Model.ContactsFileModel</node>
             <node>MainMultiThreads</node>
+            <node>Model.ContactsFileModel</node>
             <node>View.AddressBookMainView</node>
             <node>View.UpdateContactView</node>
             <node>Controller.NewContactController</node>
@@ -1124,9 +1216,7 @@
     <entry file="file://$PROJECT_DIR$/src/View/AddressBookMainView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="216" column="42" selection-start="5998" selection-end="6015" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="5814">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1137,9 +1227,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/UpdateContactView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="28" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/NewContactView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="8" selection-start="2796" selection-end="2796" vertical-scroll-proportion="4.7293234" vertical-offset="0" max-vertical-offset="2380">
+        <state line="125" column="8" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.22116904" vertical-offset="1747" max-vertical-offset="2380">
           <folding />
         </state>
       </provider>
